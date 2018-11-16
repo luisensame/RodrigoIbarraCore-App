@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Rodrigo Ibarra APP| Información de prepago</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        body {
+            width: 100%;
+            background-color: #ececec;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            font-family: Arial, Times, serif;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            padding: 0;
+            margin: auto;
+            border-collapse: collapse;
+            border: none;
+        }
+
+        .img {
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        p {
+            display: block;
+            -webkit-margin-before: .5em;
+            -webkit-margin-after: .5em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+    </style>
+</head>
+
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" yahoo="fix" style="background-color:#ececec; font-family:Arial,serif;margin:0;padding:0;min-width: 100%; -webkit-text-size-adjust:none;-ms-text-size-adjust:none;">
+
+    <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td height="50"> </td>
+            <!-- Spacer -->
+        </tr>
+        <table>
+
+            <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+                    <tr>
+                        <td bgcolor="#2491c0" width="600" valign="top" align="center">
+                            <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+                        <v:fill type="tile" color="#004195" />
+                        <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                    <![endif]-->
+                            <div>
+                                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <tr align="center" height="90px">
+                                        <td width="150px"></td>
+                                        <td width="300px">
+                                            <img src="{{hostPath}}/img/logo.png" class="img"
+                                        width="200px" style="padding: 20px;width: 30%">
+                                        </td>
+                                        <td width="150px"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                    <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr width="600px" height="auto" align="center" bgcolor="#ffffff">
+                        <td style="padding: 20px 10px 0px 10px; color: #2491c0; line-height: 30px; font-family: Arial, sans-serif; font-weight:bold; font-size: 20px;">
+                            <h3>Hola {{email}}</h3>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr width="600px" height="auto" align="justify">
+                        <td style="padding: 0px 30px 10px 30px; color: #888888;font-family: Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff" colspan="2">
+                            <p>
+                                Gracias por tu interés en nuestros productos, hemos generado una orden de prepago. A continuación se muestra la información.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr width="600px" height="auto" align="justify">
+                        <td style="width: 40%; padding: 0px 30px 10px 30px; color: #888888;font-family: Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff">
+                            <h3>Transferencia/Depósito Bancario</h3>
+                        </td>
+                        <td style="width: 60%; padding: 0px 30px 10px 30px; color: #888888;font-family: Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff">
+                            <h4 style="margin-bottom: 0px; ">MONTO A PAGAR</h4>
+                            <h1 style="margin-top: 0px;">
+                                <strong>${{monto}}
+                                    <sup style="font-size: 18px;">MXN</sup>
+                                </strong>
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <tr width="600px" height="auto" align="justify">
+                        <td style="padding: 0px 30px 10px 30px; color: #888888;font-family: Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff" colspan="2">
+
+                            <h4 style="margin-bottom: 0px; ">REFERENCIA</h4>
+                            <div style="width: 80%; border: 1px solid #a2a2a2;border-radius: 5px;padding: 0px 54px;background: #efefef;">
+                                <p>
+                                    {{referencia.banco}} 
+                                </p>
+                                <p>
+                                    {{referencia.empresa}} 
+                                </p>
+                                <p>
+                                    No. de Cuenta: {{referencia.noCuenta}} 
+                                </p>
+                                <p>
+                                    CLABE: {{referencia.clabe}} 
+                                </p>
+                            </div>
+                        </td>
+                    </tr>                    
+
+                    <tr width="600px" height="auto" align="justify">
+                        <td style="padding: 0px 30px 10px 30px; color: #888888;font-family: Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff" colspan="2">
+
+                            <div>
+                                <i>
+                                    Al completar tu pago por favor contáctanos, para proceder con la logística de entrega de tus productos.
+                                    <br>
+                                    <br>
+                                    <strong>Rodrigo Ibarra APP</strong>
+                                    <br>
+                                    Tel : {{datosContacto.tel}}
+                                    <br>
+                                    email: {{datosContacto.email}}
+                                </i>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+                    <tr>
+                        <td width="600px" height="80px" align="center" style="color: #0f83c6;">
+                            <h2 style="text-decoration: underline;">¡Gracias por tu preferencia!</h2>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr width="600px" height="auto" align="justify">
+                        <td style="padding: 0px 30px 10px 30px; color: #888888;font-family:Helvetica Neue,Helvetica,  sans-serif; font-size: 17px; line-height:1.5;"
+                            bgcolor="#ffffff">
+                            <p>
+                                Este mensaje es generado automáticamente por un sistema. Favor de no responder ya que los mensajes no se supervisan. Todos
+                                los derechos reservados a SOALRIS.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#ffffff">
+                    <tr>
+                        <td bgcolor="#2491c0" width="600" valign="top" align="center">
+                            <!--[if gte mso 9]>
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+                                <v:fill type="tile" src="{{hostPath}}/img/mails/bienvenida/footer.png" color="#0098AF" />
+                                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                            <![endif]-->
+                            <div>
+                                <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <tr align="center" height="90px">
+                                        <td width="200PX"></td>
+                                       <td width="150px" style="color: white;font-size: 11px">    
+                                            <a style="color: white;font-size: 11px">
+                                                Rodrigo Ibarra
+                                            </a>
+                                        </td>
+                                        <td width="200px"></td>
+                                    </tr>
+                                </table>                    
+                            </div>
+                            <!--[if gte mso 9]>
+                                </v:textbox>
+                                </v:rect>
+                            <![endif]-->
+                        </td>                
+                     </tr>
+                </table> 
+            </table>
+
+            <table width="600px" cellpadding="0" cellspacing="0" border="0" align="center">
+                <tr>
+                    <td height="50"> </td>
+                    <!-- Spacer -->
+                </tr>
+                <table>
+</body>
+
+</html>
