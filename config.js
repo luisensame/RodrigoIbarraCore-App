@@ -18,7 +18,7 @@ if (config.env === 'production') {
 	// Configuracion a la base de datos
 	config.db = {
 		debug: true,
-		uri: 'mongodb://RodrigoIbarraci:creacionesinteligentes2019.@ds161183.mlab.com:61183/rodrigoibarradb',
+		uri: 'mongodb://nosa_root:creaInte2018.@ds245762.mlab.com:45762/nosaapp_db',
 		options: {
 			server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
     		replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } }
@@ -83,7 +83,7 @@ if (config.env === 'production') {
 	// Configuracion a la base de datos
 	config.db = {
 		debug: true,
-		uri: 'mongodb://RodrigoIbarraci:creacionesinteligentes2019.@ds161183.mlab.com:61183/rodrigoibarradb',
+		uri: 'mongodb://nosa_root:creaInte2018.@ds245762.mlab.com:45762/nosaapp_db',
 		options: {
 			server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
     		replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } }
@@ -149,7 +149,7 @@ if (config.env === 'production') {
 	// Configuracion a la base de datos
 	config.db = {
 		debug: true,
-		uri: 'mongodb://RodrigoIbarraci:creacionesinteligentes2019.@ds161183.mlab.com:61183/rodrigoibarradb',
+		uri: 'mongodb://nosa_root:creaInte2018.@ds245762.mlab.com:45762/nosaapp_db',
 		options: {
 			server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
     		replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } }
