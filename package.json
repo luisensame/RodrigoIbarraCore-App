@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "async": "^2.3.0",
-    "bcrypt": "^1.0.2",
+    "bcrypt": "https://github.com/kelektiv/node.bcrypt.js.git#master",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.12.4",
     "cloudinary": "^1.8.0",
